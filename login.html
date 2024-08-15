@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in</title>
+  <link rel="stylesheet" href="login.css">
+ 
+</head>
+<body>
+  <div class="wrapper">
+    <form action="">
+      <h1>Sign in</h1>
+      <div class="input-box">
+        <input type="text" placeholder="Username" required>
+        <i class='bx bxs-user'></i>
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="Password"  maxlength="8" required>
+        <i class='bx bxs-lock-alt' ></i>
+      </div>
+      <div class="remember-forgot">
+        <label><input type="checkbox">Remember Me</label>
+        <a href="#">Forgot Password</a>
+      </div>
+      <div class="register-link">
+        <p>Dont have an account? <a href="register.html">Register</a></p>
+      </div>  
+      <center><input type="button" value="Login" onclick="app()"></center>
+      <input type="reset">
+    </div>
+    
+    <script>
+      function app() {
+        window.location.href = 'sucessfully.html';
+      }
+      </script>
+    
+    
+    </form>
+  </div>
+</body>
+</html>

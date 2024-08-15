@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processor Details</title>
+    <link rel="stylesheet" href="processor.css">
+</head>
+<body>
+    <header>
+        <h1>Processor Details</h1>
+    </header>
+    <main>
+
+       
+        <section id="processor-details">
+            <h2><center>processor Information</center></h2>
+            
+            <form id="processor-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="name">Company Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="name">Raw Materials Required:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="location">Product Details:</label>
+                <input type="text" id="name" name="name" required>
+               
+
+                <label for="capacity">Quantity :</label>
+                <input type="text" id="capacity" name="capacity" required>
+
+                <label for="capacity">Price ₹:</label>
+                <input type="number" id="capacity" name="capacity" required>
+
+                <label for="capacity">Expected Delivery Date</label>
+                <input type="date" id="capacity" name="capacity" required>
+                <label >State:</labe><br>
+                  <input list="states" name="state" id="state">
+<datalist id="states">
+  <option value="Andhra Pradesh">
+  <option value="Arunachal Pradesh">
+  <option value="Assam">
+  <option value="Bihar">
+  <option value="Chhattisgarh">
+  <option value="Goa">
+  <option value="Gujarat">
+  <option value="Haryana">
+  <option value="Himachal Pradesh">
+  <option value="Jammu and Kashmir">
+  <option value="Jharkhand">
+  <option value="Karnataka">
+  <option value="Kerala">
+  <option value="Madhya Pradesh">
+  <option value="Maharashtra">
+  <option value="Manipur">
+  <option value="Meghalaya">
+  <option value="Mizoram">
+  <option value="Nagaland">
+  <option value="Odisha">
+  <option value="Punjab">
+  <option value="Rajasthan">
+  <option value="Sikkim">
+  <option value="Tamil Nadu">
+  <option value="Telangana">
+  <option value="Tripura">
+  <option value="Uttar Pradesh">
+  <option value="Uttarakhand">
+  <option value="West Bengal">
+</datalist>
+<br>
+
+
+                <label for="location">District:</label><br>
+                <input type="text" id="location" name="location" required><br>
+                <label for="location">Address:</label><br>
+                <input type="text" id="location" name="location" required><br>
+
+  
+                <label for="contact">Contact No:</label><br>
+                <input type="text" id="contact" name="contact" required><br>
+                <label>OTP Verification</label>
+                <input type="password">
+                <br>
+
+                <center><button type="button" onclick="app()">Submit</button></center>
+                <br>
+                <center><button type="button" onclick="appp()">BACK TO HOME</button></center>
+            </form>
+        </section>
+        <p id="responseMessage"></p>
+            <script>
+                function app() {
+                    document.getElementById('responseMessage').innerHTML = '<h5>THANK YOU FOR SUBMITING</h5>';
+                }
+                function appp()
+                {
+                    window.location.href = 'mainpage.html';
+                }
+
+            </script>
+    </main>
+    
+</body>
+</html>
